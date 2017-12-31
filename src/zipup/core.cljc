@@ -24,27 +24,27 @@
     last))
 
 (def prev-nth
-  "Applies clojure.zip/prev to loc n times"
+  "Applies clojure.zip/prev to loc n times. See [[move-nth]]."
   (partial move-nth zip/prev))
 
 (def next-nth
-  "Applies clojure.zip/next to loc n times"
+  "Applies clojure.zip/next to loc n times. See [[move-nth]]."
   (partial move-nth zip/next))
 
 (def left-nth
-  "Applies clojure.zip/left to loc n times"
+  "Applies clojure.zip/left to loc n times. See [[move-nth]]."
   (partial move-nth zip/left))
 
 (def right-nth
-  "Applies clojure.zip/right to loc n times"
+  "Applies clojure.zip/right to loc n times. See [[move-nth]]."
   (partial move-nth zip/right))
 
 (def up-nth
-  "Applies clojure.zip/up to loc n times"
+  "Applies clojure.zip/up to loc n times. See [[move-nth]]."
   (partial move-nth zip/up))
 
 (def down-nth
-  "Applies clojure.zip/down to loc n times"
+  "Applies clojure.zip/down to loc n times. See [[move-nth]]."
   (partial move-nth zip/down))
 
 (defn copy-zip

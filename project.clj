@@ -5,6 +5,5 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :plugins [[lein-codox "0.10.3"]]
-  :codox {:output-path "codox"
-          :metadata {:doc/format :markdown}
+  :codox {:metadata {:doc/format :markdown}
           :source-uri "http://github.com/tkocmathla/zipup/blob/{version}/{filepath}#L{line}"})

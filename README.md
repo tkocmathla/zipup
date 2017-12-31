@@ -1,5 +1,7 @@
 # zipup
 
+[![Clojars Project](https://img.shields.io/clojars/v/zipup.svg)](https://clojars.org/zipup)
+
 Zipup is a Clojure library of useful zipper functions to complement [clojure.zip](https://clojure.github.io/clojure/clojure.zip-api.html). 
 
 ## Installation

@@ -10,6 +10,10 @@ To install, add the following to your project `:dependencies`:
 
     [zipup "0.1.0"]
 
+## Documentation
+
+* [API Docs](https://tkocmathla.github.io/zipup)
+
 ## License
 
 Copyright © 2017 Matt Grimm

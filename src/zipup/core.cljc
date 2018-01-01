@@ -1,6 +1,10 @@
 (ns zipup.core
   (:require [clojure.zip :as zip]))
 
+(def leaf?
+  "Returns true if the node at loc is a leaf node"
+  (complement zip/branch?))
+
 (defn top?
   "Returns true if the node at loc is the root node"
   [loc]
@@ -67,8 +71,8 @@
        last))
 
 (defn map-zip
-  "Applies f to every node in the tree rooted at loc"
+  "Applies f to every leaf node in the tree rooted at loc"
   [f loc]
   (if (zip/end? loc)
     (root-loc loc)
-    (recur f (zip/next (zip/edit loc f)))))
+    (recur f (zip/next (cond-> loc (leaf? loc) (zip/edit f))))))

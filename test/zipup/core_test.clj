@@ -46,9 +46,9 @@
 (deftest map-zip-test
   (is (= [2 :a 3 [4]]
          (->> (z/vector-zip [1 :a 2 [3]]) 
-              (zu/map-zip #(cond-> % (number? %) inc))
+              (zu/map-zip inc (comp number? z/node))
               z/node)))
   (is (= ["1" ":a" "2" ["3"]]
          (->> (z/vector-zip [1 :a 2 [3]])
-              (zu/map-zip str)
+              (zu/map-zip str zu/leaf?)
               z/node))))

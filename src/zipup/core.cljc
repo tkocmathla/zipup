@@ -71,8 +71,8 @@
        last))
 
 (defn map-zip
-  "Applies f to every leaf node in the tree rooted at loc"
-  [f loc]
+  "Applies f to every node in the tree rooted at loc for which (pred loc) returns true"
+  [f pred loc]
   (if (zip/end? loc)
     (root-loc loc)
-    (recur f (zip/next (cond-> loc (leaf? loc) (zip/edit f))))))
+    (recur f pred (zip/next (cond-> loc (pred loc) (zip/edit f))))))

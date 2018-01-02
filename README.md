@@ -16,7 +16,7 @@ To install, add the following to your project `:dependencies`:
 
 ## License
 
-Copyright © 2017 Matt Grimm
+Copyright © 2018 Matt Grimm
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

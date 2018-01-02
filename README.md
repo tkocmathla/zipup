@@ -8,7 +8,7 @@ Zipup is a Clojure library of useful zipper functions to complement [clojure.zip
 
 To install, add the following to your project `:dependencies`:
 
-    [zipup "0.1.0"]
+    [zipup "0.2.0"]
 
 ## Documentation
 

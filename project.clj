@@ -1,4 +1,4 @@
-(defproject zipup "0.1.0"
+(defproject zipup "0.2.0"
   :description "A library of useful zipper functions"
   :url "http://github.com/tkocmathla/zipup"
   :license {:name "Eclipse Public License"
